@@ -1,0 +1,29 @@
+[debug] [2024-02-16T18:04:39.227Z] ----------------------------------------------------------------------
+[debug] [2024-02-16T18:04:39.230Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-02-16T18:04:39.230Z] CLI Version:   12.7.0
+[debug] [2024-02-16T18:04:39.231Z] Platform:      darwin
+[debug] [2024-02-16T18:04:39.231Z] Node Version:  v18.17.0
+[debug] [2024-02-16T18:04:39.233Z] Time:          Fri Feb 16 2024 13:04:39 GMT-0500 (hora estándar de Perú)
+[debug] [2024-02-16T18:04:39.233Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-16T18:04:39.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-16T18:04:39.318Z] > authorizing via signed-in user (team@bytecampperu.com)
+[debug] [2024-02-16T18:04:39.318Z] [iam] checking project aaii-pucp for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-02-16T18:04:39.321Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aaii-pucp:testIamPermissions [none]
+[debug] [2024-02-16T18:04:39.321Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aaii-pucp:testIamPermissions x-goog-quota-user=projects/aaii-pucp
+[debug] [2024-02-16T18:04:39.322Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aaii-pucp:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-02-16T18:04:40.523Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aaii-pucp:testIamPermissions 200
+[debug] [2024-02-16T18:04:40.523Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aaii-pucp:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-02-16T18:04:40.525Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aaii-pucp [none]
+[debug] [2024-02-16T18:04:41.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aaii-pucp 200
+[debug] [2024-02-16T18:04:41.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aaii-pucp {"projectId":"aaii-pucp","projectNumber":"618063044182","displayName":"aaii-pucp","name":"projects/aaii-pucp","resources":{"hostingSite":"aaii-pucp","storageBucket":"aaii-pucp.appspot.com","locationId":"us-east4"},"state":"ACTIVE","etag":"1_f8f6a640-589c-4386-a2b5-d16da5e4b5cf"}
+[info] 
+[info] === Deploying to 'aaii-pucp'...
+[info] 
+[info] i  deploying storage, firestore, hosting 
+[debug] [2024-02-16T18:04:41.028Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aaii-pucp [none]
+[debug] [2024-02-16T18:04:41.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aaii-pucp 200
+[debug] [2024-02-16T18:04:41.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aaii-pucp {"projectId":"aaii-pucp","projectNumber":"618063044182","displayName":"aaii-pucp","name":"projects/aaii-pucp","resources":{"hostingSite":"aaii-pucp","storageBucket":"aaii-pucp.appspot.com","locationId":"us-east4"},"state":"ACTIVE","etag":"1_f8f6a640-589c-4386-a2b5-d16da5e4b5cf"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2024-02-16T18:04:41.438Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/aaii-pucp:test [none]
+[debug] [2024-02-16T18:04:41.438Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/aaii-pucp:test [omitted]
